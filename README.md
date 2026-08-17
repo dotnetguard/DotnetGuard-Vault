@@ -8,9 +8,10 @@ Built by [dotnetguard.blog](https://dotnetguard.blog).
 
 | Unlock | Vault overview | Add entry |
 |---|---|---|
+<img width="1333" height="564" alt="image" src="https://github.com/user-attachments/assets/02cbc130-0600-43a5-bba1-e9a65bd1a94b" />
 <img width="366" height="277" alt="image" src="https://github.com/user-attachments/assets/a586224e-c985-4701-a236-f37776b79f49" />
 <img width="1026" height="598" alt="image" src="https://github.com/user-attachments/assets/b8f4f74c-0c3a-4436-acd2-fc4a2b8fc75f" />
-<img width="367" height="513" alt="image" src="https://github.com/user-attachments/assets/bea1426b-ea07-4027-b752-4e82bbc1f45b" />
+
 
 ## Features
 
