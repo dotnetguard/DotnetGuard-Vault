@@ -1,0 +1,42 @@
+<Window x:Class="DotnetGuard.KeyBox.App.Views.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="DotnetGuard KeyBox" Icon="/Assets/app.ico" Width="380" SizeToContent="Height"
+        Background="{StaticResource BackgroundBrush}" Foreground="{StaticResource TextPrimaryBrush}"
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="16"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Name="HeaderText" Grid.Row="0" Text="&gt; set up vault" FontSize="18" FontWeight="Bold"
+                   Foreground="{StaticResource AccentBrush}"/>
+
+        <TextBlock Grid.Row="2" Text="Username"/>
+        <TextBox x:Name="UsernameBox" Grid.Row="3"/>
+
+        <TextBlock Grid.Row="5" Text="Master password"/>
+        <PasswordBox x:Name="MasterPasswordBox" Grid.Row="6"/>
+
+        <TextBlock x:Name="ConfirmLabel" Grid.Row="8" Text="Confirm master password"/>
+        <PasswordBox x:Name="ConfirmPasswordBox" Grid.Row="9"/>
+
+        <TextBlock x:Name="ErrorText" Grid.Row="11" Foreground="{StaticResource DangerBrush}" TextWrapping="Wrap"/>
+
+        <Button x:Name="ActionButton" Grid.Row="13" Content="Create vault" Height="32"
+                Click="ActionButton_Click"/>
+    </Grid>
+</Window>

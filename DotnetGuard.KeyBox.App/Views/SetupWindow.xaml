@@ -1,0 +1,52 @@
+<Window x:Class="DotnetGuard.KeyBox.App.Views.SetupWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="DotnetGuard KeyBox" Icon="/Assets/app.ico" Width="420" SizeToContent="Height"
+        Background="{StaticResource BackgroundBrush}" Foreground="{StaticResource TextPrimaryBrush}"
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="6"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="16"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="16"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Text="&gt; database setup" FontSize="18" FontWeight="Bold"
+                   Foreground="{StaticResource AccentBrush}"/>
+        <TextBlock Grid.Row="2" TextWrapping="Wrap"
+                   Text="Connect DotnetGuard KeyBox to your local MySQL server. The database and tables are created automatically."/>
+
+        <TextBlock Grid.Row="4" Text="Server"/>
+        <TextBox x:Name="ServerBox" Grid.Row="5" Text="localhost"/>
+
+        <TextBlock Grid.Row="7" Text="Database name"/>
+        <TextBox x:Name="DatabaseBox" Grid.Row="8" Text="dotnetguard_keybox"/>
+
+        <TextBlock Grid.Row="10" Text="MySQL username"/>
+        <TextBox x:Name="UsernameBox" Grid.Row="11" Text="root"/>
+
+        <TextBlock Grid.Row="13" Text="MySQL password"/>
+        <PasswordBox x:Name="PasswordBox" Grid.Row="14"/>
+
+        <TextBlock x:Name="ErrorText" Grid.Row="16" Foreground="{StaticResource DangerBrush}" TextWrapping="Wrap"/>
+
+        <Button x:Name="ConnectButton" Grid.Row="18" Content="Connect and continue" Height="32"
+                Click="ConnectButton_Click"/>
+    </Grid>
+</Window>

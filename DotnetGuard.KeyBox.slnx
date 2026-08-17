@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="DotnetGuard.KeyBox.App/DotnetGuard.KeyBox.App.csproj" />
+  <Project Path="DotnetGuard.KeyBox.Core/DotnetGuard.KeyBox.Core.csproj" />
+  <Project Path="DotnetGuard.KeyBox.Data/DotnetGuard.KeyBox.Data.csproj" />
+</Solution>
