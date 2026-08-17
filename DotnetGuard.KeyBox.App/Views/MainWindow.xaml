@@ -13,6 +13,7 @@
             <ColumnDefinition Width="220"/>
             <ColumnDefinition Width="10"/>
             <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
 
         <Border Grid.Column="0" BorderBrush="{StaticResource AppBorderBrush}" BorderThickness="1"
@@ -99,5 +100,7 @@
             <TextBlock x:Name="ClipboardStatusText" Grid.Row="8" HorizontalAlignment="Right"
                        Foreground="{StaticResource AccentBrush}" FontSize="12" Visibility="Collapsed"/>
         </Grid>
+
+        <local:EntryPanel x:Name="EntryPanel" Grid.Column="3" Margin="10,0,0,0" Visibility="Collapsed"/>
     </Grid>
 </Window>

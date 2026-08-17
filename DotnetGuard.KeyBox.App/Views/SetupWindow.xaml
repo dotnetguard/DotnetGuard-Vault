@@ -33,7 +33,7 @@
                    Text="Connect DotnetGuard KeyBox to your local MySQL server. The database and tables are created automatically."/>
 
         <TextBlock Grid.Row="4" Text="Server"/>
-        <TextBox x:Name="ServerBox" Grid.Row="5" Text="localhost"/>
+        <TextBox x:Name="ServerBox" Grid.Row="5" Text="127.0.0.1"/>
 
         <TextBlock Grid.Row="7" Text="Database name"/>
         <TextBox x:Name="DatabaseBox" Grid.Row="8" Text="dotnetguard_keybox"/>

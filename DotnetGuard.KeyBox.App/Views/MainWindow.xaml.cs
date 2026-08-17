@@ -49,6 +49,9 @@ namespace DotnetGuard.KeyBox.App.Views
             _idleTimer.Tick += IdleTimer_Tick;
             _idleTimer.Start();
 
+            EntryPanel.Initialize(_session);
+            EntryPanel.Saved += (s, args) => LoadEntries();
+
             LoadEntries();
         }
 
@@ -146,12 +149,7 @@ namespace DotnetGuard.KeyBox.App.Views
 
         private void AddButton_Click(object sender, RoutedEventArgs e)
         {
-            EntryWindow entryWindow = new EntryWindow(_session, null);
-
-            if (entryWindow.ShowDialog() == true)
-            {
-                LoadEntries();
-            }
+            EntryPanel.ShowForAdd();
         }
 
         private void EditButton_Click(object sender, RoutedEventArgs e)
@@ -164,12 +162,7 @@ namespace DotnetGuard.KeyBox.App.Views
                 return;
             }
 
-            EntryWindow entryWindow = new EntryWindow(_session, selected);
-
-            if (entryWindow.ShowDialog() == true)
-            {
-                LoadEntries();
-            }
+            EntryPanel.ShowForEdit(selected);
         }
 
         private void DeleteButton_Click(object sender, RoutedEventArgs e)
