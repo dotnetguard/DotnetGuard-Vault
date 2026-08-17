@@ -4,6 +4,12 @@ A self-hosted, offline-first password manager built with C# / .NET 6, WPF and My
 
 Built by [dotnetguard.blog](https://dotnetguard.blog).
 
+## Screenshots
+
+| Unlock | Vault overview | Add entry |
+|---|---|---|
+| ![Unlock screen](docs/screenshots/unlock-vault.png) | ![Vault overview](docs/screenshots/vault-overview.png) | ![Add entry](docs/screenshots/add-entry.png) |
+
 ## Features
 
 - Master-password-protected vault (PBKDF2, 210k iterations)
