@@ -41,7 +41,7 @@ Built by [dotnetguard.blog](https://dotnetguard.blog).
 
 ```bash
 git clone https://github.com/dotnetguard/DotnetGuard-Vault.git
-cd DotnetGuard-Vault
+cd DotnetGuard-Vault/KeyBox
 dotnet build
 dotnet run --project DotnetGuard.KeyBox.App
 ```
